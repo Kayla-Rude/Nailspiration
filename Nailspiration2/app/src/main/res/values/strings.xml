@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Nailspiration2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="polish_name">Polish Name</string>
+    <string name="company_name">Company Name</string>
+    <string name="selected_item">Selected Item</string>
+    <string name="polish_type">Type of Polish</string>
+    <string name="select_polish_type">Select polish type.</string>
+    <string name="textview">TextView</string>
+    <string name="select_polish_effect">Polish Effect</string>
+    <string name="polish_effect">Polish Effect</string>
+    <string name="add_polish">Add Polish</string>
+
+
+</resources>

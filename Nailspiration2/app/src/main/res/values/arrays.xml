@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PolishType">
+        <item>Regular</item>
+        <item>Stamping</item>
+        <item>Gel</item>
+    </string-array>
+
+
+    <string-array name="polishEffect">
+        <item>Creme</item>
+        <item>Holo Glitter</item>
+        <item>Linear Holo</item>
+        <item>Scattered Holo</item>
+        <item>Magnetic</item>
+        <item>Thermal</item>
+        <item>Solar</item>
+        <item>Metallic</item>
+        <item>Multichrome</item>
+    </string-array>
+</resources>

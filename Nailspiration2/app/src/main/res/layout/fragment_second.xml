@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_polish_bottle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_second"
+        app:srcCompat="@drawable/ic_nail_polish_bottle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/polish_name"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/polish_name"
+        app:layout_constraintStart_toEndOf="@id/icon_polish_bottle"
+        app:layout_constraintTop_toBottomOf="@id/textview_second">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/polish_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/company_name"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/company_name"
+        app:layout_constraintStart_toEndOf="@id/icon_polish_bottle"
+        app:layout_constraintTop_toBottomOf="@id/polish_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/company_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/polishType"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/polish_type"
+        app:layout_constraintTop_toBottomOf="@id/company_name"
+        app:layout_constraintStart_toEndOf="@id/icon_polish_bottle">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="@string/select_polish_type"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/polishEffect"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/polish_effect"
+        app:layout_constraintTop_toBottomOf="@id/polishType"
+        app:layout_constraintStart_toEndOf="@id/icon_polish_bottle">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewEffect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="@string/select_polish_effect"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_polish_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/add_polish"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        app:layout_constraintStart_toStartOf="@id/polishEffect"
+        app:layout_constraintTop_toBottomOf="@id/polishEffect"
+        app:layout_constraintEnd_toEndOf="@id/polishEffect"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
